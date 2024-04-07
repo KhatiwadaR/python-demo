@@ -7,7 +7,7 @@ def factor(num):
     for item in primeNum:
         while num%item == 0:
             factor.append(item)
-            num = num/item;
+            num = num/item
             if num == 1:
                 break
     factor.append(int(num))
@@ -16,15 +16,15 @@ def factor(num):
 def highcf(num):
     for item in hcf:
         if num % item == 0:
-            num = num/item;
+            num = num/item
         else:
-            hcf.remove(item);
+            hcf.remove(item)
     
 def leastcm(num):
     global lcm
     for item in lcm:
         if num % item == 0:
-            num = num/item;
+            num = num/item
             if num == 1:
                 break
 
