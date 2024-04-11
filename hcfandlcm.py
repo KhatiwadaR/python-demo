@@ -53,7 +53,6 @@ def number():
             num = int(input("Enter your number: "))
             1/num + 1
            
-        
         except:
             print('Please Enter real number.')
         
