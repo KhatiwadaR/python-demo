@@ -31,22 +31,42 @@ def leastcm(num):
     if int(num) != 1:
         lcm.extend(factor(num))
 
-n = int(input("Finding HCF and LCM of how many numbers?"))
-print("Number should be greater than 0.")
-number = int(input("Enter your first number: "))
+while True:
+        try:
+            n = int(input("Finding HCF and LCM of how many numbers?\n"))
+            num = int(input("Enter first number : "))
+            1/n + 1
+            1/num + 1
 
-hcf = factor(number)
-lcm = factor(number)
+        except:
+            print('Please Enter real number.')
+        
+        else:
+            break
 
-if n > 2:
-    for i in range(0,n-2):
-        number = int(input("Next number: "))
-        highcf(number)
-        leastcm(number)
+hcf = factor(num)
+lcm = factor(num)
 
-lastNumber = int(input("Enter last number: "))
-highcf(lastNumber)
-leastcm(lastNumber)
+def number():
+    while True:
+        try:
+            num = int(input("Enter your number: "))
+            1/num + 1
+           
+        
+        except:
+            print('Please Enter real number.')
+        
+        else:
+            break
+
+    highcf(num)
+    leastcm(num)
+
+if n > 1:
+    for i in range(1,n):
+        number()
+
 
 print("HCF is ", math.prod(hcf))
 print("LCM is ", math.prod(lcm))
